@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+
+body {
+  background: #ececec;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+      padding: 24px 24px 24px 83px;
+}
+
+ .side-bar {
+   background: white;
+   bottom: 0px;
+   position: absolute;
+   width: 56px;
+   top : 63px;
+   border-left: 1px solid #c7c7c7;
+ }
+
+ .w-40 {
+   width: 40%;
+ }
+
+.w-35{
+  width: 35%;
+}
+
+/* ======================= Navbar media query end =====================*/
+/* 7 .Sidebar
+   ==================================================================================================================================== */
+aside {
+    bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    width: 58px;
+    z-index: 1030;
+}
+
+aside ul {
+    padding: 0;
+    margin: 0;
+}
+
+aside ul .sidebar-height::-webkit-scrollbar {
+    width: 2px;
+}
+
+aside ul li {
+    display: inline-block;
+    width: 100%;
+    /* margin: 15px 0px 15px 9px; */
+    margin: 10px 0px 10px 10px;
+}
+
+aside ul li.logo img {
+    padding: 10px;
+}
+
+aside ul li.logo,
+aside ul li:hover .logo {
+    padding: 0;
+    margin: 0 !important;
+    line-height: 0px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    text-align: center;
+    padding: 7px;
+    line-height: 32px;
+    border-radius: 12px;
+    color: #b4b7c5;
+}
+
+aside ul li a i {
+    vertical-align: middle;
+    color: #088ab1;
+    font-size: 24px !important;
+}
+
+
+
+aside ul li.active i,
+aside ul li:hover i {
+    color: #ff7100;
+}
+
+aside ul li.active a,
+aside ul li:hover a {
+    text-decoration: none;
+    text-align: center;
+    padding: 7px 8px 12px 8px;
+    line-height: 32px;
+    border-radius: 4px;
+}
+
+aside ul li span {
+
+    position: fixed;
+    right: 0px;
+    left: 57px;
+    z-index: 1036;
+    background: #ff7100;
+    color: white;
+    padding: 7px 5px 7px 10px;
+    width: 120px;
+    display: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 12px 8px 20px -10px rgba(0, 0, 0, 0.4);
+}
+
+aside ul li:hover span {
+    display: inline;
+}
+
+.sidebar-toggle i {
+    vertical-align: middle;
+    font-size: 38px;
+}
+
+.sidebar-height::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #9c9c9c;
+}
+
+
+/*=================== sidebar media query code start =============================*/
+@media(min-width:320px) {
+    .sidebar-toggle i {
+    }
+}
+
+@media(min-width:991px) {
+    aside ul li {
+        display: inline-block;
+        width: 100%;
+        /* margin: 15px 0px 15px 9px; */
+        margin: 6px 0px 6px 10px;
+    }
+}
+
+@media (min-width:1150px) {
+    aside ul li {
+        display: inline-block;
+        width: 100%;
+        /* margin: 15px 0px 15px 9px; */
+        margin: 10px 0px 10px 10px;
+    }
+}
